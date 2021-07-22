@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+        .up{
+            background-color: rgba(0, 0, 0, 0.096);
+            height: 60px;
+        }
+        .up2{
+            border-right:1px solid rgb(14, 14, 14);
+            width: 90px;
+            background-color: rgba(0, 0, 0, 0.027);
+            height: 60px;
+            position: relative;
+            top: px;
+            left: 0px;
+            font-size: 20px;
+            line-height: 60px;
+            text-align: center;
+            
+            
+        }
+        .up21{
+            color: black;
+            text-decoration: none
+        }
+        .up21:hover{
+            color: black;
+        }
+        .up2:hover{
+            background-color: rgba(0, 0, 0, 0.178);
+        }
+
+        #name{
+            position: relative;
+            top: 100px;
+            left: 300px;
+            width: 140px;
+        }
+
+        #title{
+            position: relative;
+            top: 100px;
+            left: 360px;
+            width: 540px;
+        }
+
+        #data{
+            position: relative;
+            top: 120px;
+            left: 300px;
+            width: 740px;
+            height: 500px;
+            text-align: left;
+            word-wrap:break-word;
+        }
+</style>
+<body>
+    <div class="up">
+
+        <h1 class="up2"><a class="up21" href="#">게시판</a></h1>
+    </div>
+
+    <h1 class="text-center"><a href="#">게시판</a></h1>
+
+    <div class="container">
+        <div style="float: left" id="name"> {{ result[0][2] }}</div>
+        <div style="float: down"  id="title">{{ result[0][1] }}</div>
+        <div id="data">{{ result[0][4] }}</div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
